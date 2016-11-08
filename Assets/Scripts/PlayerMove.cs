@@ -6,7 +6,8 @@ public class PlayerMove : NetworkBehaviour {
 	
 	//Movimento
 	private Animator animator;
-	public float speed = 10f;
+	public float Speed = 10f;
+	public float RunMultiplier;
 	private Rigidbody rb;
 	private float h, v;
 	private Vector3 movementVector;
@@ -16,12 +17,14 @@ public class PlayerMove : NetworkBehaviour {
 	private GameObject model;
 	private int layerMask = 1 << 8;
 	private Vector3 HitPosition;
+	//private bool hasFocus;
 
 	void Awake () {
 		rb = GetComponent<Rigidbody>();
 		animator = transform.FindChild ("Model").GetComponent<Animator> ();
 		correndo = false;
 		model = transform.FindChild ("Model").gameObject;
+//		hasFocus = true;
 	}
 
 	void Update () {
@@ -40,9 +43,9 @@ public class PlayerMove : NetworkBehaviour {
 		movementVector.Normalize ();
 
 		if (!correndo) {
-			rb.AddForce (movementVector * (speed));
+			rb.AddForce (movementVector * (Speed));
 		} else {
-			rb.AddForce (movementVector * (speed * 1.3f));
+			rb.AddForce (movementVector * (Speed * RunMultiplier));
 		}
 
 		if (Input.GetKey (KeyCode.LeftShift)) {
@@ -58,13 +61,15 @@ public class PlayerMove : NetworkBehaviour {
 		A posiçao do hit desse raio e armazenada na variavel HitPosition para ser 
 		posteriormente usada para rotacionar o corpo do personagem e a arma dele.
 		 */
-		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-		RaycastHit hit;
-		if (Physics.Raycast(ray, out hit, Mathf.Infinity, layerMask)) {
-			HitPosition = new Vector3(hit.point.x, model.transform.position.y, hit.point.z);
-			model.transform.LookAt(HitPosition);
-			//Debug.Log (HitPosition);
-		}
+//		if (hasFocus) {
+			Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+			RaycastHit hit;
+			if (Physics.Raycast(ray, out hit, Mathf.Infinity, layerMask)) {
+				HitPosition = new Vector3(hit.point.x, model.transform.position.y, hit.point.z);
+				model.transform.LookAt(HitPosition);
+				//Debug.Log (HitPosition);
+			}
+//		}
 	}
 
 	void animar() {
@@ -74,4 +79,8 @@ public class PlayerMove : NetworkBehaviour {
 			animator.SetBool ("Moving", false); //trocar para triger depois
 		}
 	}
+//
+//	void OnApplicationFocus(bool focus) {
+//		hasFocus = focus;
+//	}
 }

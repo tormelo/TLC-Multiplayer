@@ -340,7 +340,6 @@ GameObject:
   - 4: {fileID: 411484}
   - 95: {fileID: 9538512}
   - 114: {fileID: 11439082}
-  - 114: {fileID: 11441606}
   - 82: {fileID: 8281040}
   m_Layer: 0
   m_Name: Crossbow
@@ -374,7 +373,6 @@ GameObject:
   - 4: {fileID: 474658}
   - 95: {fileID: 9592264}
   - 114: {fileID: 11476184}
-  - 114: {fileID: 11457952}
   - 82: {fileID: 8276220}
   m_Layer: 0
   m_Name: Blaster
@@ -528,7 +526,6 @@ GameObject:
   - 4: {fileID: 420552}
   - 95: {fileID: 9555616}
   - 114: {fileID: 11431830}
-  - 114: {fileID: 11409492}
   - 82: {fileID: 8264054}
   m_Layer: 0
   m_Name: Firestarter
@@ -646,7 +643,6 @@ GameObject:
   - 4: {fileID: 459198}
   - 95: {fileID: 9535542}
   - 114: {fileID: 11449910}
-  - 114: {fileID: 11488462}
   - 82: {fileID: 8211086}
   m_Layer: 0
   m_Name: Singun
@@ -751,7 +747,6 @@ GameObject:
   - 4: {fileID: 489280}
   - 95: {fileID: 9556114}
   - 114: {fileID: 11498416}
-  - 114: {fileID: 11451750}
   - 82: {fileID: 8235730}
   m_Layer: 0
   m_Name: Grenade Launcher
@@ -904,7 +899,6 @@ GameObject:
   - 4: {fileID: 404288}
   - 95: {fileID: 9554744}
   - 114: {fileID: 11444370}
-  - 114: {fileID: 11458760}
   - 82: {fileID: 8263184}
   m_Layer: 0
   m_Name: Avenger
@@ -955,7 +949,6 @@ GameObject:
   - 4: {fileID: 444512}
   - 95: {fileID: 9582368}
   - 114: {fileID: 11440644}
-  - 114: {fileID: 11488404}
   - 82: {fileID: 8208736}
   m_Layer: 0
   m_Name: Lightsaber+
@@ -981,8 +974,6 @@ GameObject:
   - 54: {fileID: 5421584}
   - 114: {fileID: 11463646}
   - 114: {fileID: 11418906}
-  - 114: {fileID: 11416632}
-  - 114: {fileID: 11498052}
   - 95: {fileID: 95000013334838402}
   m_Layer: 0
   m_Name: PlayerCube
@@ -1088,7 +1079,6 @@ GameObject:
   - 4: {fileID: 406048}
   - 95: {fileID: 9526278}
   - 114: {fileID: 11425894}
-  - 114: {fileID: 11402396}
   - 82: {fileID: 8233952}
   m_Layer: 0
   m_Name: Repeater
@@ -1193,7 +1183,6 @@ GameObject:
   - 4: {fileID: 415782}
   - 95: {fileID: 9588884}
   - 114: {fileID: 11487824}
-  - 114: {fileID: 11416704}
   - 82: {fileID: 8230662}
   m_Layer: 0
   m_Name: Lightsaber-
@@ -1312,7 +1301,6 @@ GameObject:
   - 4: {fileID: 410616}
   - 95: {fileID: 9538358}
   - 114: {fileID: 11496040}
-  - 114: {fileID: 11411042}
   - 82: {fileID: 8236952}
   - 82: {fileID: 8243464}
   - 82: {fileID: 8262782}
@@ -5298,82 +5286,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 5
---- !u!114 &11402396
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 182754}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce6edccc33aa98a4a8b49356b6d483bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Model: {fileID: 0}
-  HitPosition: {x: 0, y: 0, z: 0}
-  angle: 0
-  layerMask: 256
-  posPlano: {x: 0, y: 0, z: 0}
---- !u!114 &11409492
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 146480}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce6edccc33aa98a4a8b49356b6d483bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Model: {fileID: 0}
-  HitPosition: {x: 0, y: 0, z: 0}
-  angle: 0
-  layerMask: 256
-  posPlano: {x: 0, y: 0, z: 0}
---- !u!114 &11411042
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 198336}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce6edccc33aa98a4a8b49356b6d483bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Model: {fileID: 0}
-  HitPosition: {x: 0, y: 0, z: 0}
-  angle: 0
-  layerMask: 256
-  posPlano: {x: 0, y: 0, z: 0}
---- !u!114 &11416632
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 176474}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4bac9371d4306849a2a4f3bf2013c22, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 10
---- !u!114 &11416704
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 189826}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce6edccc33aa98a4a8b49356b6d483bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Model: {fileID: 0}
-  HitPosition: {x: 0, y: 0, z: 0}
-  angle: 0
-  layerMask: 256
-  posPlano: {x: 0, y: 0, z: 0}
 --- !u!114 &11418640
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5385,7 +5297,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14466b31b9a31ef46882db75fe8fab86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  Speed: 10
+  RunMultiplier: 1.5
 --- !u!114 &11418906
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5561,22 +5474,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 9582368}
---- !u!114 &11441606
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 125600}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce6edccc33aa98a4a8b49356b6d483bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Model: {fileID: 0}
-  HitPosition: {x: 0, y: 0, z: 0}
-  angle: 0
-  layerMask: 256
-  posPlano: {x: 0, y: 0, z: 0}
 --- !u!114 &11444370
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5605,54 +5502,6 @@ MonoBehaviour:
   animator: {fileID: 9535542}
   Projectile: {fileID: 125872, guid: b33ed18f3de794f4cbc7c4af78b48d71, type: 2}
   ProjectileSpawner: {fileID: 198786}
---- !u!114 &11451750
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 158240}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce6edccc33aa98a4a8b49356b6d483bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Model: {fileID: 0}
-  HitPosition: {x: 0, y: 0, z: 0}
-  angle: 0
-  layerMask: 256
-  posPlano: {x: 0, y: 0, z: 0}
---- !u!114 &11457952
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 133252}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce6edccc33aa98a4a8b49356b6d483bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Model: {fileID: 0}
-  HitPosition: {x: 0, y: 0, z: 0}
-  angle: 0
-  layerMask: 256
-  posPlano: {x: 0, y: 0, z: 0}
---- !u!114 &11458760
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 170434}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce6edccc33aa98a4a8b49356b6d483bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Model: {fileID: 0}
-  HitPosition: {x: 0, y: 0, z: 0}
-  angle: 0
-  layerMask: 256
-  posPlano: {x: 0, y: 0, z: 0}
 --- !u!114 &11463646
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5791,38 +5640,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 9588884}
---- !u!114 &11488404
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 176008}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce6edccc33aa98a4a8b49356b6d483bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Model: {fileID: 0}
-  HitPosition: {x: 0, y: 0, z: 0}
-  angle: 0
-  layerMask: 256
-  posPlano: {x: 0, y: 0, z: 0}
---- !u!114 &11488462
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 153834}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce6edccc33aa98a4a8b49356b6d483bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Model: {fileID: 0}
-  HitPosition: {x: 0, y: 0, z: 0}
-  angle: 0
-  layerMask: 256
-  posPlano: {x: 0, y: 0, z: 0}
 --- !u!114 &11496040
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5842,19 +5659,6 @@ MonoBehaviour:
   ProjectileSpawner: {fileID: 153548}
   tempoMedio: 0.5
   tempoForte: 1
---- !u!114 &11498052
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 176474}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4cd96cbe4bcac5e4c84c11ef518d0ca3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 9519428}
-  Speed: 60
 --- !u!114 &11498416
 MonoBehaviour:
   m_ObjectHideFlags: 1
