@@ -592,7 +592,7 @@ public class Master : MonoBehaviour {
 		stageState = -1;
 		endInitialized = false;
 
-		SaveSystem.saved = false;
+		//SaveSystem.saved = false;
 	}
 
 	void Update () {

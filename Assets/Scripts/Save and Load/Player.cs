@@ -2,6 +2,36 @@
 using System.Collections;
 
 [System.Serializable]
+public class Player {
+	public string name;
+	public float r, g, b;
+	public int k, d, hiscore, rank;
+
+	//Construtor padrão que não leva argumentos
+	public Player()
+	{
+		name = "";
+		r = 1;
+		g = 1;
+		b = 1;
+		k = 0;
+		d = 0;
+		hiscore = 0;
+		rank = 0;
+	}
+
+	public Color GetColor() {
+		return new Color (r, g, b);
+	}
+
+	public void SetColor (Color color) {
+		r = color.r;
+		g = color.g;
+		b = color.b;
+	}
+}
+
+[System.Serializable]
 public class Game {
 
 	public int polys;
